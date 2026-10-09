@@ -110,8 +110,8 @@ def map_dsco_order(dsco_order):
             "Phone": dsco_order.get("billTo", {}).get("phone"),
             #Mobile
             #"CourierService": dsco_order.get("shipCarrier") + " " + dsco_order.get("shipMethod") + " - " + "Ecommerce", #Agregar ecommerce
-            "CourierServiceId": 2543,  #chequear cual es el de
-            "Channel": "TEST_DSCO", #Cambiar a DSCO
+            "CourierServiceId": 2565,  #chequear cual es el de
+            "Channel": "DSCO - ecomm", #Cambiar a DSCO
             "ChannelId": int(os.getenv("CHANNEL_ID", "0")),
             "Warehouse": "Warehouse", #Chequear
             "WarehouseId": int(os.getenv("MINTSOFT_WAREHOUSE_ID", "0")),
